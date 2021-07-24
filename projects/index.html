@@ -19,6 +19,14 @@
 
 <!-- Open Graph -->
 
+<meta property="og:site_name" content="The main website of DVS-Group in Wuhan University by Prof. Lei Yu.
+" />
+<meta property="og:type" content="object" />
+<meta property="og:title" content="" />
+<meta property="og:url" content="dvs-whu.github.io/projects/" />
+<meta property="og:description" content="Projects" />
+<meta property="og:image" content="" />
+
 
 <!-- Bootstrap & MDB -->
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous">
@@ -47,6 +55,16 @@
 <!-- Theming-->
 
 
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-XXXXXXXXX');
+</script>
 
 
 
@@ -170,23 +188,26 @@
   <article>
     <div class="projects">
   
-  <!-- Display projects without categories -->
+  <!-- Display categorized projects -->
     
-    <!-- Generate cards for each project -->
-    
-      <div class="grid">
-        
-          <div class="grid-item">
+      <h2 class="category">work</h2>
+      
+      
+      <!-- Generate cards for each project -->
+      
+        <div class="grid">
+          
+            <div class="grid-item">
   
   <a href="/projects/1_project/">
   
     <div class="card hoverable">
       
-      <img src="/assets/img/12.jpg" alt="project thumbnail" />
+      <img src="/assets/img/esai_proj/in-recon-03.gif" alt="project thumbnail" />
       
       <div class="card-body">
-        <h2 class="card-title text-lowercase">project 1</h2>
-        <p class="card-text">a project with a background image</p>
+        <h2 class="card-title text-lowercase">E-SAI</h2>
+        <p class="card-text">Event-based Synthetic Aperture Imaging</p>
         <div class="row ml-1 mr-1 p-0">
           
         </div>
@@ -195,8 +216,8 @@
   </a>
 </div>
 
-        
-          <div class="grid-item">
+          
+            <div class="grid-item">
   
   <a href="/projects/2_project/">
   
@@ -205,8 +226,8 @@
       <img src="/assets/img/3.jpg" alt="project thumbnail" />
       
       <div class="card-body">
-        <h2 class="card-title text-lowercase">project 2</h2>
-        <p class="card-text">a project with a background image</p>
+        <h2 class="card-title text-lowercase">eSL-Net</h2>
+        <p class="card-text">A network that can super-resolve blurred images.</p>
         <div class="row ml-1 mr-1 p-0">
           
         </div>
@@ -215,18 +236,18 @@
   </a>
 </div>
 
-        
-          <div class="grid-item">
+          
+            <div class="grid-item">
   
-  <a href="https://unsplash.com" target="_blank">
+  <a href="https://spritea.github.io/DET/" target="_blank">
   
     <div class="card hoverable">
       
-      <img src="/assets/img/7.jpg" alt="project thumbnail" />
+      <img src="/assets/img/det_proj/dataset.jpeg" alt="project thumbnail" />
       
       <div class="card-body">
-        <h2 class="card-title text-lowercase">project 3</h2>
-        <p class="card-text">a project that redirects to another website</p>
+        <h2 class="card-title text-lowercase">DET</h2>
+        <p class="card-text">A High-resolution DVS Dataset for Lane Extraction (DET)</p>
         <div class="row ml-1 mr-1 p-0">
           
         </div>
@@ -235,64 +256,19 @@
   </a>
 </div>
 
-        
-          <div class="grid-item">
-  
-  <a href="/projects/4_project/">
-  
-    <div class="card hoverable">
-      
-      <div class="card-body">
-        <h2 class="card-title text-lowercase">project 4</h2>
-        <p class="card-text">another without an image</p>
-        <div class="row ml-1 mr-1 p-0">
           
         </div>
-      </div>
-    </div>
-  </a>
-</div>
-
-        
-          <div class="grid-item">
-  
-  <a href="/projects/5_project/">
-  
-    <div class="card hoverable">
       
-      <img src="/assets/img/1.jpg" alt="project thumbnail" />
+    
+      <h2 class="category">fun</h2>
       
-      <div class="card-body">
-        <h2 class="card-title text-lowercase">project 5</h2>
-        <p class="card-text">a project with a background image</p>
-        <div class="row ml-1 mr-1 p-0">
+      
+      <!-- Generate cards for each project -->
+      
+        <div class="grid">
           
         </div>
-      </div>
-    </div>
-  </a>
-</div>
-
-        
-          <div class="grid-item">
-  
-  <a href="/projects/6_project/">
-  
-    <div class="card hoverable">
       
-      <div class="card-body">
-        <h2 class="card-title text-lowercase">project 6</h2>
-        <p class="card-text">a project with no image</p>
-        <div class="row ml-1 mr-1 p-0">
-          
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-
-        
-      </div>
     
 
   
@@ -330,8 +306,18 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js" integrity="sha512-Mug9KHKmroQFMLm93zGrjhibM2z2Obg9l6qFG2qKjXEXkMp/VDkI4uju9m4QKPjWSwQ6O2qzZEnJDEeCw0Blcw==" crossorigin="anonymous"></script>
 
   
+<!-- Mansory & imagesLoaded -->
+<script defer src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script defer src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
 
   
+<!-- Enable Tooltips -->
+<script type="text/javascript">
+$(function () {$('[data-toggle="tooltip"]').tooltip()})
+</script>
+
 
 
 <!-- Medium Zoom JS -->
