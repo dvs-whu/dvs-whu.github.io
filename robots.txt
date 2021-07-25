@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: dvs-whu.github.io/sitemap.xml
+Sitemap: /sitemap.xml
