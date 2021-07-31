@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -77,7 +76,126 @@
 <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 
 
+    <script src="/assets/js/distillpub/template.v2.js"></script>
+    <script src="/assets/js/distillpub/transforms.v2.js"></script>
+    <script src="/assets/js/distillpub/overrides.js"></script>
+    
+    <style type="text/css">
+      .fake-img {
+  background: #bbb;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0px;
+  vertical-align: center;
+} .fake-img p {
+  font-family: monospace;
+  color: white;
+  text-align: left;
+  margin: 0px 0;
+  text-align: center;
+  font-size: 16px;
+} .styled_img{
+        border:1px solid rgba(0,0,0,1);
+        width: 110px;
+        height: 110px;
+      }
+d-article table th, d-article table td {
+  font-size: 15px;
+  padding: 1px 1px; 
+  text-align: center;
+  border-bottom: 0px;
+} d-article table{
+  border-bottom:0px;
+  margin-bottom:0px;
+} d-article a {
+  border-bottom-color: #212529 !important;
+} p{
+  text-align: justify;
+}
+
+    </style>
+    
   </head>
+
+  <d-front-matter>
+    <script async type="text/json">{
+      "title": "E-SAI",
+      "description": "Event-based Synthetic Aperture Imaging",
+      "published": "June 22, 2021",
+      "authors": [
+        
+        {
+          "author": "Xiang Zhang",
+          "authorURL": "/members/zx/",
+          "affiliations": [
+            {
+              "name": "Wuhan University",
+              "url": ""
+            }
+          ]
+        },
+        
+        {
+          "author": "Wei Liao",
+          "authorURL": "/members/lw/",
+          "affiliations": [
+            {
+              "name": "Wuhan University",
+              "url": ""
+            }
+          ]
+        },
+        
+        {
+          "author": "Lei Yu ✉️",
+          "authorURL": "/",
+          "affiliations": [
+            {
+              "name": "Wuhan University",
+              "url": ""
+            }
+          ]
+        },
+        
+        {
+          "author": "Wen Yang",
+          "authorURL": "/members/yw/",
+          "affiliations": [
+            {
+              "name": "Wuhan University",
+              "url": ""
+            }
+          ]
+        },
+        
+        {
+          "author": "Gui-song Xia",
+          "authorURL": "",
+          "affiliations": [
+            {
+              "name": "Wuhan University",
+              "url": ""
+            }
+          ]
+        }
+        
+      ],
+      "katex": {
+        "delimiters": [
+          {
+            "left": "$",
+            "right": "$",
+            "display": false
+          },
+          {
+            "left": "$$",
+            "right": "$$",
+            "display": true
+          }
+        ]
+      }
+    }</script>
+  </d-front-matter>
 
   <body class="fixed-top-nav ">
 
@@ -176,213 +294,210 @@
 
     <!-- Content -->
 
-    <div class="container mt-5">
-      <div class="post">
+    <div class="post distill">
 
-  <header class="post-header">
-    <h1 class="post-title">E-SAI</h1>
-    <p class="post-description">Event-based Synthetic Aperture Imaging</p>
-  </header>
+      <d-title>
+        <h1>E-SAI</h1>
+        <p>Event-based Synthetic Aperture Imaging</p>
+      </d-title>
 
-  <article>
-    <style>
-.styled_img{
-          border:1px solid rgba(0,0,0,1);
-          width: 120px;
-          height: 120px;
-        }
-</style>
+      <d-byline></d-byline>
 
-<div class="row">
+      <d-article>
+        <!-- <style>
+ align="left" border="0" width="300" style="padding-left: 50px;padding-right: 50px;"
+</style> -->
+
+<h2 id="abstract">Abstract</h2>
+
+<p>Synthetic aperture imaging (SAI) is able to achieve the see through effect by blurring out the off-focus foreground occlusions and reconstructing the in-focus occluded targets from multi-view images. However, very dense occlusions and extreme lighting conditions may bring significant disturbances to the SAI based on conventional frame-based cameras, leading to performance degeneration. To address these problems, we propose a novel SAI system based on the event camera which can produce asynchronous events with extremely low latency and high dynamic range. Thus, it can eliminate the interference of dense occlusions by measuring with almost continuous views, and simultaneously tackle the over/under exposure problems. To reconstruct the occluded targets, we propose a hybrid encoder-decoder network composed of spiking neural networks (SNNs) and convolutional neural networks (CNNs). In the hybrid network, the spatio-temporal information of the collected events is first encoded by SNN layers, and then transformed to the visual image of the occluded targets by a style-transfer CNN decoder. Through experiments, the proposed method shows remarkable performance in dealing with very dense occlusions and extreme lighting conditions, and high quality visual images can be reconstructed using pure event data.</p>
+
+<div class="fake-img l-body">
     <div class="col-sm mt-3 mt-md-0">
         <img class="img-fluid rounded z-depth-0" src="/assets/img/esai_proj/pipeline.png" alt="" title="Pipeline of E-SAI" />
     </div>
 </div>
 
-<h1 id="abstract">Abstract</h1>
+<p><strong>Note:</strong> This work has been published in CVPR2021, <a class="citation" href="#zhang2021">(Zhang et al., 2021)</a> and selected as the Best Paper Candidate.</p>
 
-<p>Synthetic aperture imaging (SAI) is able to achieve the see through effect by blurring out the off-focus foreground occlusions and reconstructing the in-focus occluded targets from multi-view images. However, very dense occlusions and extreme lighting conditions may bring significant disturbances to the SAI based on conventional frame-based cameras, leading to performance degeneration. To address these problems, we propose a novel SAI system based on the event camera which can produce asynchronous events with extremely low latency and high dynamic range. Thus, it can eliminate the interference of dense occlusions by measuring with almost continuous views, and simultaneously tackle the over/under exposure problems. To reconstruct the occluded targets, we propose a hybrid encoder-decoder network composed of spiking neural networks (SNNs) and convolutional neural networks (CNNs). In the hybrid network, the spatio-temporal information of the collected events is first encoded by SNN layers, and then transformed to the visual image of the occluded targets by a style-transfer CNN decoder. Through experiments, the proposed method shows remarkable performance in dealing with very dense occlusions and extreme lighting conditions, and high quality visual images can be reconstructed using pure event data.</p>
+<!-- 
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-2 mt-3 mt-md-0">
     <a href="https://arxiv.org/abs/2103.02376" class="link-block w-inline-block">
-        <img class="img-fluid rounded" style="width: 54px;height:64px" src="/assets/img/esai_proj/paper_icon_esai.png" alt="" title="Paper" />
+        <img class="img-fluid rounded" style="width: 54px;height:64px" src="/assets/img/esai_proj/paper_icon_esai.png" alt="" title="Paper"/>
     </a>
     </div>
     <div class="col-sm-2 mt-3 mt-md-0">
-        <img class="img-fluid rounded" style="width: 64px;height:64px" src="/assets/img/github_icon.png" alt="" title="Code is coming soon!" />
+        <img class="img-fluid rounded" style="width: 64px;height:64px" src="/assets/img/github_icon.png" alt="" title="Code is coming soon!"/>
     </div>
-</div>
-
-<p>Related works have been published in <a class="citation" href="#zhang2021">(Zhang et al., 2021)</a>.</p>
+</div> -->
 
 <div class="row justify-content-sm-center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/a81xBe2ZX_8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 </div>
 
-<!-- ![](/assets/img/esai_proj/pipeline.png) -->
-
-<h1 id="results">Results</h1>
+<h2 id="results">Results</h2>
 <p>Here are the results on our event-based SAI dataset including indoor scenes, outdoor scenes and extreme lighting scenes, and we show the reconstruction process as the number of input events increases. The dataset will be released soon.</p>
 
-<h2 id="indoor-scenes">Indoor Scenes</h2>
-<div class="row justify-content-sm-center">
+<h3 id="indoor-scenes">Indoor Scenes</h3>
+<div class="row fake-img l-body text-center">
 <div class="col-sm mt-3 mt-md-0">
-<table align="left" border="0" width="300" style="padding-left: 20px;padding-right: 20px;">
+<table align="left">
       <tbody><tr> 
-        <td width="120" align="center"><img class="styled_img" src="/assets/img/esai_proj/in-gt-04.png" /></td>
-        <td width="120" align="center"><img class="styled_img" src="/assets/img/esai_proj/in-occ-04.png" /></td>
-        <td width="120" align="center"><img class="styled_img" src="/assets/img/esai_proj/in-recon-04.gif" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/in-gt-04.png" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/in-occ-04.png" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/in-recon-04.gif" /></td>
       </tr>
       <tr> 
-        <td width="150" align="center"><img class="styled_img" src="/assets/img/esai_proj/in-gt-01.png" /></td>
-        <td width="150" align="center"><img class="styled_img" src="/assets/img/esai_proj/in-occ-01.png" /></td>
-        <td width="150" align="center"><img class="styled_img" src="/assets/img/esai_proj/in-recon-01.gif" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/in-gt-01.png" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/in-occ-01.png" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/in-recon-01.gif" /></td>
       </tr>
       <tr> 
-        <td width="150" align="center"><img class="styled_img" src="/assets/img/esai_proj/in-gt-06.png" /></td>
-        <td width="150" align="center"><img class="styled_img" src="/assets/img/esai_proj/in-occ-06.png" /></td>
-        <td width="150" align="center"><img class="styled_img" src="/assets/img/esai_proj/in-recon-06.gif" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/in-gt-06.png" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/in-occ-06.png" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/in-recon-06.gif" /></td>
       </tr>
       <tr> 
-        <td width="150" align="center" class="caption_p">Reference</td>
-        <td width="150" align="center" class="caption_p">Occluded view</td>
-        <td width="150" align="center" class="caption_p">Reconstruction</td>
+        <td class="caption_p">Reference</td>
+        <td class="caption_p">Occluded view</td>
+        <td class="caption_p">Reconstruction</td>
       </tr>
     </tbody></table>
 
 </div>
 <div class="col-sm mt-3 mt-md-0">
-<table align="left" border="0" width="300" style="padding-left: 20px;padding-right: 20px;">
+<table align="left">
       <tbody><tr> 
-        <td width="120" align="center"><img class="styled_img" src="/assets/img/esai_proj/in-gt-05.png" /></td>
-        <td width="120" align="center"><img class="styled_img" src="/assets/img/esai_proj/in-occ-05.png" /></td>
-        <td width="120" align="center"><img class="styled_img" src="/assets/img/esai_proj/in-recon-05.gif" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/in-gt-05.png" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/in-occ-05.png" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/in-recon-05.gif" /></td>
       </tr>
       <tr> 
-        <td width="150" align="center"><img class="styled_img" src="/assets/img/esai_proj/in-gt-02.png" /></td>
-        <td width="150" align="center"><img class="styled_img" src="/assets/img/esai_proj/in-occ-02.png" /></td>
-        <td width="150" align="center"><img class="styled_img" src="/assets/img/esai_proj/in-recon-02.gif" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/in-gt-02.png" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/in-occ-02.png" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/in-recon-02.gif" /></td>
       </tr>
       <tr> 
-        <td width="150" align="center"><img class="styled_img" src="/assets/img/esai_proj/in-gt-03.png" /></td>
-        <td width="150" align="center"><img class="styled_img" src="/assets/img/esai_proj/in-occ-03.png" /></td>
-        <td width="150" align="center"><img class="styled_img" src="/assets/img/esai_proj/in-recon-03.gif" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/in-gt-03.png" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/in-occ-03.png" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/in-recon-03.gif" /></td>
       </tr>
       <tr> 
-        <td width="150" align="center" class="caption_p">Reference</td>
-        <td width="150" align="center" class="caption_p">Occluded view</td>
-        <td width="150" align="center" class="caption_p">Reconstruction</td>
+        <td class="caption_p">Reference</td>
+        <td class="caption_p">Occluded view</td>
+        <td class="caption_p">Reconstruction</td>
       </tr>
     </tbody></table>
 </div>
 </div>
 
-<h2 id="outdoor-scenes">Outdoor Scenes</h2>
+<h3 id="outdoor-scenes">Outdoor Scenes</h3>
 
-<div class="row">
+<div class="row fake-img l-body">
 <div class="col-sm mt-3 mt-md-0">
-<table align="left" border="0" width="300" style="padding-left: 50px;padding-right: 50px;">
+<table align="left">
       <tbody><tr> 
-        <td width="150" align="center"><img class="styled_img" src="/assets/img/esai_proj/out-gt-01.png" /></td>
-        <td width="150" align="center"><img class="styled_img" src="/assets/img/esai_proj/out-occ-01.png" /></td>
-        <td width="150" align="center"><img class="styled_img" src="/assets/img/esai_proj/out-recon-01.gif" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/out-gt-01.png" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/out-occ-01.png" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/out-recon-01.gif" /></td>
       </tr>
       <tr>
-        <td width="150" align="center"><img class="styled_img" src="/assets/img/esai_proj/out-gt-03.png" /></td>
-        <td width="150" align="center"><img class="styled_img" src="/assets/img/esai_proj/out-occ-03.png" /></td>
-        <td width="150" align="center"><img class="styled_img" src="/assets/img/esai_proj/out-recon-03.gif" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/out-gt-03.png" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/out-occ-03.png" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/out-recon-03.gif" /></td>
       </tr>
       <tr>
-      <td width="150" align="center"><img class="styled_img" src="/assets/img/esai_proj/out-gt-04.png" /></td>
-        <td width="150" align="center"><img class="styled_img" src="/assets/img/esai_proj/out-occ-04.png" /></td>
-        <td width="150" align="center"><img class="styled_img" src="/assets/img/esai_proj/out-recon-04.gif" /></td>
+      <td><img class="styled_img" src="/assets/img/esai_proj/out-gt-04.png" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/out-occ-04.png" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/out-recon-04.gif" /></td>
       </tr>
       <tr>
-      <td width="150" align="center" class="caption_p">Reference</td>
-        <td width="150" align="center" class="caption_p">Occluded view</td>
-        <td width="150" align="center" class="caption_p">Reconstruction</td>
+      <td class="caption_p">Reference</td>
+        <td class="caption_p">Occluded view</td>
+        <td class="caption_p">Reconstruction</td>
       </tr>
       <!-- <TR> 
-        <TD width="150" align="center" class="caption_p">Reference</TD>
-        <TD width="150" align="center" class="caption_p">Occluded view</TD>
-        <TD width="150" align="center" class="caption_p">Reconstruction</TD>
-        <TD width="120" align="center" class="caption_p">  </TD>
-        <TD width="150" align="center" class="caption_p">Reference</TD>
-        <TD width="150" align="center" class="caption_p">Occluded view</TD>
-        <TD width="150" align="center" class="caption_p">Reconstruction</TD>
+        <TD class="caption_p">Reference</TD>
+        <TD class="caption_p">Occluded view</TD>
+        <TD class="caption_p">Reconstruction</TD>
+        <TD class="caption_p">  </TD>
+        <TD class="caption_p">Reference</TD>
+        <TD class="caption_p">Occluded view</TD>
+        <TD class="caption_p">Reconstruction</TD>
       </TR> -->
     </tbody></table>
 </div>
 <div class="col-sm mt-3 mt-md-0">
-<table align="left" border="0" width="300" style="padding-left: 50px;padding-right: 50px;">
+<table align="left">
       <tbody><tr> 
-        <td width="150" align="center"><img class="styled_img" src="/assets/img/esai_proj/out-gt-02.png" /></td>
-        <td width="150" align="center"><img class="styled_img" src="/assets/img/esai_proj/out-occ-02.png" /></td>
-        <td width="150" align="center"><img class="styled_img" src="/assets/img/esai_proj/out-recon-02.gif" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/out-gt-02.png" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/out-occ-02.png" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/out-recon-02.gif" /></td>
       </tr>
       <tr>
-        <td width="150" align="center"><img class="styled_img" src="/assets/img/esai_proj/out-gt-05.png" /></td>
-        <td width="150" align="center"><img class="styled_img" src="/assets/img/esai_proj/out-occ-05.png" /></td>
-        <td width="150" align="center"><img class="styled_img" src="/assets/img/esai_proj/out-recon-05.gif" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/out-gt-05.png" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/out-occ-05.png" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/out-recon-05.gif" /></td>
       </tr>
       <tr>
-        <td width="150" align="center"><img class="styled_img" src="/assets/img/esai_proj/out-gt-06.png" /></td>
-        <td width="150" align="center"><img class="styled_img" src="/assets/img/esai_proj/out-occ-06.png" /></td>
-        <td width="150" align="center"><img class="styled_img" src="/assets/img/esai_proj/out-recon-06.gif" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/out-gt-06.png" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/out-occ-06.png" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/out-recon-06.gif" /></td>
       </tr>
       <tr>
-      <td width="150" align="center" class="caption_p">Reference</td>
-        <td width="150" align="center" class="caption_p">Occluded view</td>
-        <td width="150" align="center" class="caption_p">Reconstruction</td>
+      <td class="caption_p">Reference</td>
+        <td class="caption_p">Occluded view</td>
+        <td class="caption_p">Reconstruction</td>
       </tr>
       <!-- <TR> 
-        <TD width="150" align="center" class="caption_p">Reference</TD>
-        <TD width="150" align="center" class="caption_p">Occluded view</TD>
-        <TD width="150" align="center" class="caption_p">Reconstruction</TD>
-        <TD width="120" align="center" class="caption_p">  </TD>
-        <TD width="150" align="center" class="caption_p">Reference</TD>
-        <TD width="150" align="center" class="caption_p">Occluded view</TD>
-        <TD width="150" align="center" class="caption_p">Reconstruction</TD>
+        <TD class="caption_p">Reference</TD>
+        <TD class="caption_p">Occluded view</TD>
+        <TD class="caption_p">Reconstruction</TD>
+        <TD class="caption_p">  </TD>
+        <TD class="caption_p">Reference</TD>
+        <TD class="caption_p">Occluded view</TD>
+        <TD class="caption_p">Reconstruction</TD>
       </TR> -->
     </tbody></table>
 </div>
 </div>
 
-<h2 id="extreme-lighting-scenes">Extreme Lighting Scenes</h2>
-<div class="row">
+<h3 id="extreme-lighting-scenes">Extreme Lighting Scenes</h3>
+<div class="row fake-img l-body">
 <div class="col-sm mt-3 mt-md-0">
-<table align="left" border="0" width="300" style="padding-left: 50px;padding-right: 50px;">
+<table align="left">
       <tbody><tr> 
-        <td width="150" align="center"><img class="styled_img" src="/assets/img/esai_proj/ex-gt-01.png" /></td>
-        <td width="150" align="center"><img class="styled_img" src="/assets/img/esai_proj/ex-occ-01.png" /></td>
-        <td width="150" align="center"><img class="styled_img" src="/assets/img/esai_proj/ex-recon-01.gif" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/ex-gt-01.png" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/ex-occ-01.png" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/ex-recon-01.gif" /></td>
       </tr>
       <tr> 
-        <td width="150" align="center" class="caption_p">Reference</td>
-        <td width="150" align="center" class="caption_p">Occluded view</td>
-        <td width="150" align="center" class="caption_p">Reconstruction</td>
+        <td class="caption_p">Reference</td>
+        <td class="caption_p">Occluded view</td>
+        <td class="caption_p">Reconstruction</td>
       </tr>
     </tbody></table>
 </div>
 <div class="col-sm mt-3 mt-md-0">
-<table align="left" border="0" width="300" style="padding-left: 50px;padding-right: 50px;">
+<table align="left">
       <tbody><tr> 
-        <td width="150" align="center"><img class="styled_img" src="/assets/img/esai_proj/ex-gt-02.png" /></td>
-        <td width="150" align="center"><img class="styled_img" src="/assets/img/esai_proj/ex-occ-02.png" /></td>
-        <td width="150" align="center"><img class="styled_img" src="/assets/img/esai_proj/ex-recon-02.gif" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/ex-gt-02.png" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/ex-occ-02.png" /></td>
+        <td><img class="styled_img" src="/assets/img/esai_proj/ex-recon-02.gif" /></td>
       </tr>
       <tr> 
-        <td width="150" align="center" class="caption_p">Reference</td>
-        <td width="150" align="center" class="caption_p">Occluded view</td>
-        <td width="150" align="center" class="caption_p">Reconstruction</td>
+        <td class="caption_p">Reference</td>
+        <td class="caption_p">Occluded view</td>
+        <td class="caption_p">Reconstruction</td>
       </tr>
     </tbody></table>
 </div>
 </div>
 
+<h2 id="related-publications">Related Publications</h2>
 <div class="publications">
-      <h2>Related Publications</h2>
       <ol class="bibliography"><li>
   
 
@@ -499,9 +614,12 @@
 </div>
 
 
-  </article>
+      </d-article>
 
-</div>
+      <d-appendix>
+        <d-footnote-list></d-footnote-list>
+        <d-citation-list></d-citation-list>
+      </d-appendix>
 
     </div>
 
@@ -524,33 +642,7 @@
 
   </body>
 
-  <!-- Bootsrap & MDB scripts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js" integrity="sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A==" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js" integrity="sha512-Mug9KHKmroQFMLm93zGrjhibM2z2Obg9l6qFG2qKjXEXkMp/VDkI4uju9m4QKPjWSwQ6O2qzZEnJDEeCw0Blcw==" crossorigin="anonymous"></script>
-
-  
-<!-- Mansory & imagesLoaded -->
-<script defer src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-<script defer src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
-
-
-  
-<!-- Enable Tooltips -->
-<script type="text/javascript">
-$(function () {$('[data-toggle="tooltip"]').tooltip()})
-</script>
-
-
-
-<!-- Medium Zoom JS -->
-<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
-<script src="/assets/js/zoom.js"></script>
-
-
-<!-- Load Common JS -->
-<script src="/assets/js/common.js"></script>
-
+  <d-bibliography src="/assets/bibliography/">
+  </d-bibliography>
 
 </html>
