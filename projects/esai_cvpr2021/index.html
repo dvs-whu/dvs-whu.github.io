@@ -83,8 +83,7 @@
   background: #ddd;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding: 10px 10px
 } .fake-img p {
   font-family: monospace;
   color: white;
@@ -233,8 +232,8 @@ table th, d-article table td {
 
 <p>Synthetic aperture imaging (SAI) is able to achieve the see through effect by blurring out the off-focus foreground occlusions and reconstructing the in-focus occluded targets from multi-view images. However, very dense occlusions and extreme lighting conditions may bring significant disturbances to the SAI based on conventional frame-based cameras, leading to performance degeneration. To address these problems, we propose a novel SAI system based on the event camera which can produce asynchronous events with extremely low latency and high dynamic range. Thus, it can eliminate the interference of dense occlusions by measuring with almost continuous views, and simultaneously tackle the over/under exposure problems. To reconstruct the occluded targets, we propose a hybrid encoder-decoder network composed of spiking neural networks (SNNs) and convolutional neural networks (CNNs). In the hybrid network, the spatio-temporal information of the collected events is first encoded by SNN layers, and then transformed to the visual image of the occluded targets by a style-transfer CNN decoder. Through experiments, the proposed method shows remarkable performance in dealing with very dense occlusions and extreme lighting conditions, and high quality visual images can be reconstructed using pure event data.</p>
 
-<div class="fake-img l-body">
-    <div class="col-sm mt-3 mt-md-0">
+<div class="col-sm mt-3 mt-md-0">
+    <div class="fake-img l-body">
         <img class="img-fluid rounded z-depth-0" src="/assets/img/esai_proj/pipeline.png" alt="" title="Pipeline of E-SAI" />
     </div>
 </div>
@@ -551,7 +550,7 @@ table th, d-article table td {
 
     
     
-    Last updated: July 31, 2021.
+    Last updated: August 01, 2021.
     
   </div>
 </footer>
