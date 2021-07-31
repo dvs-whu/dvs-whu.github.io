@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
+    
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -62,7 +64,7 @@
 
 
 
-
+ 
     
 <!-- MathJax -->
 <script type="text/javascript">
@@ -76,10 +78,6 @@
 <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 
 
-    <script src="/assets/js/distillpub/template.v2.js"></script>
-    <script src="/assets/js/distillpub/transforms.v2.js"></script>
-    <script src="/assets/js/distillpub/overrides.js"></script>
-    
     <style type="text/css">
       .fake-img {
   background: #ddd;
@@ -94,106 +92,29 @@
   text-align: center;
 } .styled_img{
         border:1px solid rgba(0,0,0,1);
-        width: 110px;
-        height: 110px;
+        width: 130px;
+        height: 130px;
       }
-d-article table th, d-article table td {
+table th, d-article table td {
   font-size: 15px;
   padding: 1px 1px; 
   text-align: center;
   border-bottom: 0px;
-} d-article table{
+} table{
   border-bottom:0px;
   margin-bottom:0px;
-} d-article a {
-  border-bottom-color: #212529 !important;
+} .col-sm{
+  padding-right: 1px;
+  padding-left: 1px;
+} a.btn{
+  border-bottom-color: #000000 !important;
 }
 
     </style>
-    
-  </head>
+    <link rel="stylesheet" type="text/css" href="/assets/css/distill/title.css">
+</head>
 
-  <d-front-matter>
-    <script async type="text/json">{
-      "title": "E-SAI",
-      "description": "Event-based Synthetic Aperture Imaging with a Hybrid Network",
-      "published": "June 22, 2021",
-      "authors": [
-        
-        {
-          "author": "Xiang Zhang",
-          "authorURL": "/members/zx/",
-          "affiliations": [
-            {
-              "name": "Wuhan University",
-              "url": "https://www.whu.edu.cn/"
-            }
-          ]
-        },
-        
-        {
-          "author": "Wei Liao",
-          "authorURL": "/members/lw/",
-          "affiliations": [
-            {
-              "name": "Wuhan University",
-              "url": "https://www.whu.edu.cn/"
-            }
-          ]
-        },
-        
-        {
-          "author": "Lei Yu ✉️",
-          "authorURL": "/",
-          "affiliations": [
-            {
-              "name": "Wuhan University",
-              "url": "https://www.whu.edu.cn/"
-            }
-          ]
-        },
-        
-        {
-          "author": "Wen Yang",
-          "authorURL": "http://www.captain-whu.com/yangwen.html",
-          "affiliations": [
-            {
-              "name": "Wuhan University",
-              "url": "https://www.whu.edu.cn/"
-            }
-          ]
-        },
-        
-        {
-          "author": "Gui-song Xia",
-          "authorURL": "http://www.captain-whu.com/xia_En.html",
-          "affiliations": [
-            {
-              "name": "Wuhan University",
-              "url": "https://www.whu.edu.cn/"
-            }
-          ]
-        }
-        
-      ],
-      "katex": {
-        "delimiters": [
-          {
-            "left": "$",
-            "right": "$",
-            "display": false
-          },
-          {
-            "left": "$$",
-            "right": "$$",
-            "display": true
-          }
-        ]
-      }
-    }</script>
-  </d-front-matter>
-
-  <body class="fixed-top-nav ">
+<body class="fixed-top-nav ">
 
     <!-- Header -->
 
@@ -290,17 +211,21 @@ d-article table th, d-article table td {
 
     <!-- Content -->
 
-    <div class="post distill">
+    <div class="container mt-5">
 
-      <d-title>
-        <h1>E-SAI</h1>
-        <p>Event-based Synthetic Aperture Imaging with a Hybrid Network</p>
-      </d-title>
+        <div class="post">
 
-      <d-byline></d-byline>
+            <d-title>
+                <h1 class="post-title d-title">
+                E-SAI
+                </h1>
+                <p class="post-description">
+                Event-based Synthetic Aperture Imaging with a Hybrid Network
+                </p>
+            </d-title>
 
-      <d-article>
-        <!-- <style>
+            <d-article>
+                <!-- <style>
  align="left" border="0" width="300" style="padding-left: 50px;padding-right: 50px;"
 </style> -->
 
@@ -338,8 +263,8 @@ d-article table th, d-article table td {
 
 <h3 id="indoor-scenes">Indoor Scenes</h3>
 <div class="row fake-img l-body text-center">
-<div class="col-sm mt-3 mt-md-0">
-<table align="left">
+<div class="col-sm">
+<table align="center">
       <tbody><tr> 
         <td><img class="styled_img" src="/assets/img/esai_proj/in-gt-04.png" /></td>
         <td><img class="styled_img" src="/assets/img/esai_proj/in-occ-04.png" /></td>
@@ -363,8 +288,8 @@ d-article table th, d-article table td {
     </tbody></table>
 
 </div>
-<div class="col-sm mt-3 mt-md-0">
-<table align="left">
+<div class="col-sm">
+<table align="center">
       <tbody><tr> 
         <td><img class="styled_img" src="/assets/img/esai_proj/in-gt-05.png" /></td>
         <td><img class="styled_img" src="/assets/img/esai_proj/in-occ-05.png" /></td>
@@ -392,8 +317,8 @@ d-article table th, d-article table td {
 <h3 id="outdoor-scenes">Outdoor Scenes</h3>
 
 <div class="row fake-img l-body">
-<div class="col-sm mt-3 mt-md-0">
-<table align="left">
+<div class="col-sm">
+<table align="center">
       <tbody><tr> 
         <td><img class="styled_img" src="/assets/img/esai_proj/out-gt-01.png" /></td>
         <td><img class="styled_img" src="/assets/img/esai_proj/out-occ-01.png" /></td>
@@ -425,8 +350,8 @@ d-article table th, d-article table td {
       </TR> -->
     </tbody></table>
 </div>
-<div class="col-sm mt-3 mt-md-0">
-<table align="left">
+<div class="col-sm">
+<table align="center">
       <tbody><tr> 
         <td><img class="styled_img" src="/assets/img/esai_proj/out-gt-02.png" /></td>
         <td><img class="styled_img" src="/assets/img/esai_proj/out-occ-02.png" /></td>
@@ -462,8 +387,8 @@ d-article table th, d-article table td {
 
 <h3 id="extreme-lighting-scenes">Extreme Lighting Scenes</h3>
 <div class="row fake-img l-body">
-<div class="col-sm mt-3 mt-md-0">
-<table align="left">
+<div class="col-sm">
+<table align="center">
       <tbody><tr> 
         <td><img class="styled_img" src="/assets/img/esai_proj/ex-gt-01.png" /></td>
         <td><img class="styled_img" src="/assets/img/esai_proj/ex-occ-01.png" /></td>
@@ -476,8 +401,8 @@ d-article table th, d-article table td {
       </tr>
     </tbody></table>
 </div>
-<div class="col-sm mt-3 mt-md-0">
-<table align="left">
+<div class="col-sm">
+<table align="center">
       <tbody><tr> 
         <td><img class="styled_img" src="/assets/img/esai_proj/ex-gt-02.png" /></td>
         <td><img class="styled_img" src="/assets/img/esai_proj/ex-occ-02.png" /></td>
@@ -610,12 +535,9 @@ d-article table th, d-article table td {
 </div>
 
 
-      </d-article>
+            </d-article>
 
-      <d-appendix>
-        <d-footnote-list></d-footnote-list>
-        <d-citation-list></d-citation-list>
-      </d-appendix>
+        </div>
 
     </div>
 
@@ -636,9 +558,33 @@ d-article table th, d-article table td {
 
 
 
-  </body>
+</body>
 
-  <d-bibliography src="/assets/bibliography/">
-  </d-bibliography>
+<!-- Bootsrap & MDB scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js" integrity="sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A==" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js" integrity="sha512-Mug9KHKmroQFMLm93zGrjhibM2z2Obg9l6qFG2qKjXEXkMp/VDkI4uju9m4QKPjWSwQ6O2qzZEnJDEeCw0Blcw==" crossorigin="anonymous"></script>
+ 
+<!-- Mansory & imagesLoaded -->
+<script defer src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script defer src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+ 
+<!-- Enable Tooltips -->
+<script type="text/javascript">
+$(function () {$('[data-toggle="tooltip"]').tooltip()})
+</script>
+
+
+
+<!-- Medium Zoom JS -->
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+<script src="/assets/js/zoom.js"></script>
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
 
 </html>
