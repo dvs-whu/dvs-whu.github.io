@@ -1,5 +1,180 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-08-03T18:05:17+08:00</updated><id>/feed.xml</id><title type="html">DVS-Group</title><subtitle>The main website of DVS-Group in Wuhan University by Prof. Lei Yu.
-</subtitle><entry><title type="html">a distill-style blog post</title><link href="/blog/2021/distill/" rel="alternate" type="text/html" title="a distill-style blog post" /><published>2021-05-22T00:00:00+08:00</published><updated>2021-05-22T00:00:00+08:00</updated><id>/blog/2021/distill</id><content type="html" xml:base="/blog/2021/distill/">&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-08-03T18:18:54+08:00</updated><id>/feed.xml</id><title type="html">DVS-Group</title><subtitle>The main website of DVS-Group in Wuhan University by Prof. Lei Yu.
+</subtitle><entry><title type="html">事件相机暑期课程（组内）</title><link href="/blog/2021/event_course/" rel="alternate" type="text/html" title="事件相机暑期课程（组内）" /><published>2021-08-03T18:09:00+08:00</published><updated>2021-08-03T18:09:00+08:00</updated><id>/blog/2021/event_course</id><content type="html" xml:base="/blog/2021/event_course/">&lt;p&gt;“动态视觉与感知”课题组（DVS-Group）将组织第一次事件相机暑期课程，内容包括事件相机原理、数据处理以及相关基础算法的介绍；同时，我们还将简单介绍脉冲神经网络的基础知识和简单应用。课程简单有趣，主要面向本校低年级本科生和组内刚入学0年级研究生，欢迎大家报名学习。&lt;/p&gt;
+
+&lt;p&gt;若希望加入课程学习，请加QQ群：925361524.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;时间&lt;/strong&gt;: 2021.08.15—2021.08.17&lt;br /&gt;
+&lt;strong&gt;地点&lt;/strong&gt;:  电信学院201室&amp;amp;腾讯会议 &lt;br /&gt;
+&lt;strong&gt;内容：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;基于事件的视觉感知和处理&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;事件相机数据采集、处理和显示&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;面向事件相机的深度学习方法&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;基于事件的车牌识别&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;脉冲神经网络基础及应用&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;基于事件的视觉感知和处理&quot;&gt;基于事件的视觉感知和处理&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;主讲人：&lt;/strong&gt;余磊老师&lt;br /&gt;
+&lt;strong&gt;时间：&lt;/strong&gt;8月15日上午9：00-11：00&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;事件相机数据采集处理和显示&quot;&gt;事件相机数据采集、处理和显示&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;主讲人：&lt;/strong&gt;廖伟&lt;br /&gt;
+&lt;strong&gt;时间：&lt;/strong&gt;8月15日下午15：00-17：00&lt;br /&gt;
+&lt;strong&gt;准备工作：&lt;/strong&gt;建议在&lt;a href=&quot;https://blog.csdn.net/wzyaiwl/article/details/109558146&quot;&gt;Windows&lt;/a&gt;或&lt;a href=&quot;https://blog.csdn.net/ITBigGod/article/details/85690257&quot;&gt;Ubuntu&lt;/a&gt;系统下，安装Anaconda3，并创建包含numpy、opencv、dv、matplotlib以及一些其他基础库的python环境, 以及安装dv软件。&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Python环境配置
+    &lt;ol&gt;
+      &lt;li&gt;创建dv环境&lt;br /&gt;
+在Windows系统中，启动Anaconda Prompt终端，或在Ubuntu系统的终端中输入以下指令
+        &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;conda create &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; dv &lt;span class=&quot;nv&quot;&gt;python&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;3.6
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;激活环境
+        &lt;ul&gt;
+          &lt;li&gt;对于Windows系统，在Anaconda Prompt中输入
+            &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; conda activate dv
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li&gt;对于Ubuntu系统，在终端中输入
+            &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nb&quot;&gt;source &lt;/span&gt;activate dv
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;安装必要的依赖包&lt;br /&gt;
+  在激活环境后，使用pip3指令安装一些依赖包
+        &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  pip3 &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;numpy opencv-python dv matplotlib
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+        &lt;p&gt;使用conda指令安装jupyter notebook&lt;/p&gt;
+        &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  conda &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;jupyter notebook
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;DV软件安装
+    &lt;ul&gt;
+      &lt;li&gt;在Windows下，通过该&lt;a href=&quot;http://release.inivation.com/gui/latest-win-stable&quot;&gt;链接&lt;/a&gt;下载最新版本的dv软件并安装&lt;/li&gt;
+      &lt;li&gt;在Ubuntu16.04系统中，在终端中使用以下命令进行安装
+        &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;add-apt-repository ppa:ubuntu-toolchain-r/test
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;add-apt-repository ppa:lkoppel/opencv
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;add-apt-repository ppa:janisozaur/cmake-update
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;add-apt-repository ppa:inivation-ppa/inivation-xenial
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get update
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;dv-gui
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;在Ubuntu18.04、20.04系统中，在终端中使用以下命令进行安装
+        &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;add-apt-repository ppa:inivation-ppa/inivation
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get update
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;dv-gui
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;面向事件相机的深度学习方法&quot;&gt;面向事件相机的深度学习方法&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;主讲人：&lt;/strong&gt;程章意&lt;br /&gt;
+&lt;strong&gt;时间：&lt;/strong&gt;8月16日上午9：00-11：00&lt;br /&gt;
+&lt;strong&gt;准备工作：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;环境配置
+    &lt;ol&gt;
+      &lt;li&gt;建议在&lt;a href=&quot;https://blog.csdn.net/wzyaiwl/article/details/109558146&quot;&gt;Windows&lt;/a&gt;或&lt;a href=&quot;https://blog.csdn.net/ITBigGod/article/details/85690257&quot;&gt;Ubuntu&lt;/a&gt;系统下，安装Anaconda3，并创建名为py36的python环境。
+        &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;conda create &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; py36 &lt;span class=&quot;nv&quot;&gt;python&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;3.6
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+        &lt;p&gt;安装jupyter notebook用于编写和运行代码&lt;/p&gt;
+        &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;conda &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;jupyter notebook
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;配置python环境
+        &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;conda &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;pytorch torchvision &lt;span class=&quot;nv&quot;&gt;cudatoolkit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;10.0 &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; pytorch
+conda &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;pandas
+conda &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; conda-forge opencv
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;基于事件的车牌识别&quot;&gt;基于事件的车牌识别&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;主讲人：&lt;/strong&gt;卢昕老师&lt;br /&gt;
+&lt;strong&gt;时间：&lt;/strong&gt;8月16日下午15：00-17：00&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;脉冲神经网络基础及应用&quot;&gt;脉冲神经网络基础及应用&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;主讲人：&lt;/strong&gt;张翔、周维怡&lt;br /&gt;
+&lt;strong&gt;时间：&lt;/strong&gt;8月17日上午9：00-12：00&lt;br /&gt;
+&lt;strong&gt;准备工作：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;系统安装：
+    &lt;ul&gt;
+      &lt;li&gt;Ubuntu16.04系统（可以在windows10下&lt;a href=&quot;https://www.cnblogs.com/masbay/p/10745170.html&quot;&gt;安装&lt;/a&gt;ubuntu双系统（选择安装ubuntu16.04)）
+        &lt;ul&gt;
+          &lt;li&gt;在Ubuntu16.04下&lt;a href=&quot;https://blog.csdn.net/He_9520/article/details/99714635&quot;&gt;安装并配置&lt;/a&gt;cuda10.1+cudnn。在Ubuntu系统下&lt;a href=&quot;https://blog.csdn.net/ITBigGod/article/details/85690257&quot;&gt;安装&lt;/a&gt;Anaconda3，然后使用anaconda来&lt;a href=&quot;https://zhuanlan.zhihu.com/p/92292882&quot;&gt;创建&lt;/a&gt;python独立的虚拟环境并安装Pytorch。&lt;/li&gt;
+          &lt;li&gt;创建名为py36，python版本为3.6的虚拟环境
+            &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;conda create &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; py36 &lt;span class=&quot;nv&quot;&gt;python&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;3.6
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li&gt;在虚拟环境py36下安装1.6.0版本的Pytorch
+            &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;conda &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;pytorch&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;1.6.0 &lt;span class=&quot;nv&quot;&gt;torchvision&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;0.7.0 &lt;span class=&quot;nv&quot;&gt;cudatoolkit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;10.1 &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; pytorch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li&gt;在指定环境下安装jupyter notebook用于编写和运行代码
+            &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;conda &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;jupyter notebook
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;            &lt;/div&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Windows系统：在Windows系统下&lt;a href=&quot;https://blog.csdn.net/baidu_22225919/article/details/82957508&quot;&gt;安装&lt;/a&gt;Anaconda，然后使用anaconda来创建python独立的虚拟环境并安装Pytorch，操作与Linux系统下基本一致（Linux系统下使用terminal即可，Windows下使用附带的Anaconda Prompt）。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;库的安装：
+    &lt;ul&gt;
+      &lt;li&gt;当使用conda安装的时候，可能会遇到下载过慢的问题，下载的时候可能会遇到无尽的等待。这里推荐用清华源替代默认conda源的方法，可以解决下载过慢的问题。
+        &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  conda config &lt;span class=&quot;nt&quot;&gt;--add&lt;/span&gt; channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+  conda config &lt;span class=&quot;nt&quot;&gt;--add&lt;/span&gt; channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+  conda config &lt;span class=&quot;nt&quot;&gt;--set&lt;/span&gt; show_channel_urls &lt;span class=&quot;nb&quot;&gt;yes&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;添加第三方conda源：
+        &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  conda config &lt;span class=&quot;nt&quot;&gt;--add&lt;/span&gt; channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+  conda config &lt;span class=&quot;nt&quot;&gt;--add&lt;/span&gt; channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/
+  conda config &lt;span class=&quot;nt&quot;&gt;--add&lt;/span&gt; channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/
+  conda config &lt;span class=&quot;nt&quot;&gt;--add&lt;/span&gt; channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/menpo/
+  conda config &lt;span class=&quot;nt&quot;&gt;--add&lt;/span&gt; channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;以下库的安装均是在py36虚拟环境下，首先激活py36虚拟环境
+        &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  conda activate py36
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;安装notebook、ipywidgets、rise、torchvision、torchsummary、numpy
+        &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;notebook ipywidgets rise torchvision torchsummary &lt;span class=&quot;nv&quot;&gt;numpy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;1.15.4
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;以下三个软件包均是dynapcnn的配套软件，详细介绍见&lt;a href=&quot;https://gitlab.com/synsense/chengdu-dynapcnn-2020&quot;&gt;网址&lt;/a&gt;：安装aermanager、samna、sinabs
+        &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;aermanager&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;0.2.0 samna sinabs 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;以下三个软件包是Nengo的依赖包：安装nengo、nengo-gui和nengo-dl
+        &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;nengo nengo-gui nengo-dl
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+        &lt;hr /&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">“动态视觉与感知”课题组（DVS-Group）将组织第一次事件相机暑期课程，内容包括事件相机原理、数据处理以及相关基础算法的介绍；同时，我们还将简单介绍脉冲神经网络的基础知识和简单应用。课程简单有趣，主要面向本校低年级本科生和组内刚入学0年级研究生，欢迎大家报名学习。</summary></entry><entry><title type="html">a distill-style blog post</title><link href="/blog/2021/distill/" rel="alternate" type="text/html" title="a distill-style blog post" /><published>2021-05-22T00:00:00+08:00</published><updated>2021-05-22T00:00:00+08:00</updated><id>/blog/2021/distill</id><content type="html" xml:base="/blog/2021/distill/">&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt;
 Citations, footnotes, and code blocks do not display correctly in the dark mode since distill does not support the dark mode by default.
 If you are interested in correctly adding dark mode support for distill, please open &lt;a href=&quot;https://github.com/alshedivat/al-folio/discussions&quot;&gt;a discussion&lt;/a&gt; and let us know.&lt;/p&gt;
 
