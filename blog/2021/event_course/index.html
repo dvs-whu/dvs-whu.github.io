@@ -220,7 +220,7 @@
     </div>
 </div>
 <div class="caption">
-    第一个动画为事件相机的原理示意（来自瑞士INI-RPG组）；第二个动画为基于事件的高速成像结果（来自ICCV2021论文）。
+    第一个动画为事件相机的原理示意（来自瑞士INI-RPG组）；第二个动画为就事件的高速成像结果（来自ICCV2021论文）。
 </div>
 <p>自2018年底，我们成立了DVS-Group研究小组，专注于事件相机的理论和应用研究，重点解决如何利用事件相机融合提升普通相机在高速、高动态等极端条件下的成像和视觉感知能力。目前，DVS-Group已经在事件相机领域累计发表了10余篇学术论文，包括1篇视觉顶会CVPR的Best Paper Candidate。</p>
 
@@ -316,20 +316,42 @@ conda <span class="nb">install</span> <span class="nt">-c</span> conda-forge ope
 
 <h2 id="怎么识别基于事件的车牌识别">怎么识别——基于事件的车牌识别</h2>
 <p><strong>主讲人：</strong><a href="/members/lx/">卢昕老师</a><br />
-<strong>时间：</strong>8月16日下午15：00-17：00</p>
+<strong>时间：</strong>8月16日下午15：00-17：00
+<strong>准备工作：</strong></p>
+
+<ul>
+  <li>新建虚拟环境，在虚拟环境下进行下述环境配置可以避免版本冲突，较为稳妥。</li>
+  <li>下载代码、CCPD数据和预训练模型fh02.pth：https://github.com/detectRecog/CCPD</li>
+  <li>安装 Cuda(release 9.1, V9.1.85）：如果CUDA的安装版本与之前安装的不同，请在网上找教程自学如何安装多CUDA版本</li>
+  <li>安装以下版本的深度学习框架和软件包
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pytorch 0.3.1
+numpy 1.14.3
+cv2 2.4.9.1
+</code></pre></div>    </div>
+  </li>
+  <li>标注新图片车牌：
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python annotate.py <span class="nt">-i</span> <span class="o">[</span>需要检测的图片文件夹路径] <span class="nt">-m</span> <span class="o">[</span>模型路径<span class="k">***</span>/fh02.pth]
+</code></pre></div>    </div>
+  </li>
+  <li>测试模型：
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python rpnetEval.py <span class="nt">-i</span> <span class="o">[</span>需要检测的图片文件夹路径，请将图片标注转换为CCPD数据集标注格式] <span class="nt">-m</span> <span class="o">[</span>模型路径<span class="k">***</span>/fh02.pth]
+</code></pre></div>    </div>
+  </li>
+  <li>数据集下载：<a href="ttps://pan.baidu.com/s/182ACyAgcebQ2wgOHN6pjGg">百度网盘</a>，提取码：o963。</li>
+</ul>
 
 <hr />
 
 <h2 id="下一代神经网络脉冲神经网络基础及应用">下一代神经网络——脉冲神经网络基础及应用</h2>
 <p><strong>主讲人：</strong><a href="/members/zx/">张翔</a>、<a href="/members/zwy/">周维怡</a><br />
 <strong>时间：</strong>8月17日上午9：00-12：00<br />
-<strong>准备工作：</strong></p>
+<strong>准备工作：</strong>\</p>
 <ul>
   <li>系统安装：
     <ul>
-      <li>Ubuntu16.04系统（可以在windows10下<a href="https://www.cnblogs.com/masbay/p/10745170.html">安装</a>ubuntu双系统（选择安装ubuntu16.04)）
+      <li>Ubuntu16.04系统（可以在windows10下<a href="https://www.cnblogs.com/masbay/p/10745170.html">安装</a>ubuntu双系统（选择安装ubuntu16.04)）</li>
+      <li>在Ubuntu16.04下<a href="https://blog.csdn.net/He_9520/article/details/99714635">安装并配置</a>cuda10.1+cudnn。在Ubuntu系统下<a href="https://blog.csdn.net/ITBigGod/article/details/85690257">安装</a>Anaconda3，然后使用anaconda来<a href="https://zhuanlan.zhihu.com/p/92292882">创建</a>python独立的虚拟环境并安装Pytorch。
         <ul>
-          <li>在Ubuntu16.04下<a href="https://blog.csdn.net/He_9520/article/details/99714635">安装并配置</a>cuda10.1+cudnn。在Ubuntu系统下<a href="https://blog.csdn.net/ITBigGod/article/details/85690257">安装</a>Anaconda3，然后使用anaconda来<a href="https://zhuanlan.zhihu.com/p/92292882">创建</a>python独立的虚拟环境并安装Pytorch。</li>
           <li>创建名为py36，python版本为3.6的虚拟环境
             <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda create <span class="nt">-n</span> py36 <span class="nv">python</span><span class="o">=</span>3.6
 </code></pre></div>            </div>
@@ -350,33 +372,33 @@ conda <span class="nb">install</span> <span class="nt">-c</span> conda-forge ope
   <li>库的安装：
     <ul>
       <li>当使用conda安装的时候，可能会遇到下载过慢的问题，下载的时候可能会遇到无尽的等待。这里推荐用清华源替代默认conda源的方法，可以解决下载过慢的问题。
-        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  conda config <span class="nt">--add</span> channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
-  conda config <span class="nt">--add</span> channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
-  conda config <span class="nt">--set</span> show_channel_urls <span class="nb">yes</span>
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda config <span class="nt">--add</span> channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config <span class="nt">--add</span> channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+conda config <span class="nt">--set</span> show_channel_urls <span class="nb">yes</span>
 </code></pre></div>        </div>
       </li>
       <li>添加第三方conda源：
-        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  conda config <span class="nt">--add</span> channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
-  conda config <span class="nt">--add</span> channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/
-  conda config <span class="nt">--add</span> channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/
-  conda config <span class="nt">--add</span> channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/menpo/
-  conda config <span class="nt">--add</span> channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda config <span class="nt">--add</span> channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+conda config <span class="nt">--add</span> channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/
+conda config <span class="nt">--add</span> channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/
+conda config <span class="nt">--add</span> channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/menpo/
+conda config <span class="nt">--add</span> channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
 </code></pre></div>        </div>
       </li>
       <li>以下库的安装均是在py36虚拟环境下，首先激活py36虚拟环境
-        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  conda activate py36
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda activate py36
 </code></pre></div>        </div>
       </li>
       <li>安装notebook、ipywidgets、rise、torchvision、torchsummary、numpy
-        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  pip <span class="nb">install </span>notebook ipywidgets rise torchvision torchsummary <span class="nv">numpy</span><span class="o">==</span>1.15.4
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>notebook ipywidgets rise torchvision torchsummary <span class="nv">numpy</span><span class="o">==</span>1.15.4
 </code></pre></div>        </div>
       </li>
       <li>以下三个软件包均是dynapcnn的配套软件，详细介绍见<a href="https://gitlab.com/synsense/chengdu-dynapcnn-2020">网址</a>：安装aermanager、samna、sinabs
-        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  pip <span class="nb">install </span><span class="nv">aermanager</span><span class="o">==</span>0.2.0 samna sinabs 
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span><span class="nv">aermanager</span><span class="o">==</span>0.2.0 samna sinabs 
 </code></pre></div>        </div>
       </li>
       <li>以下三个软件包是Nengo的依赖包：安装nengo、nengo-gui和nengo-dl
-        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  pip <span class="nb">install </span>nengo nengo-gui nengo-dl
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>nengo nengo-gui nengo-dl
 </code></pre></div>        </div>
       </li>
     </ul>
@@ -388,6 +410,7 @@ conda <span class="nb">install</span> <span class="nt">-c</span> conda-forge ope
 <h2 id="相关资料">相关资料</h2>
 
 <ol>
+  <li>DVS-Group事件相机相关论文：<a href="https://dvs-whu.cn/publications/">https://dvs-whu.cn/publications/</a></li>
   <li>Github汇总：<a href="https://github.com/uzh-rpg/event-based_vision_resources">https://github.com/uzh-rpg/event-based_vision_resources</a></li>
   <li>相关论文列表（按年份）：<a href="https://docs.google.com/spreadsheets/d/1_OBbSz10CkxXNDHQd-Mn_ui3OmymMFvm-lW316uvxy8/edit#gid=0">https://docs.google.com/spreadsheets/d/1_OBbSz10CkxXNDHQd-Mn_ui3OmymMFvm-lW316uvxy8/edit#gid=0</a></li>
   <li>课程（Guillermo Gallego）：<a href="https://sites.google.com/view/guillermogallego/teaching/event-based-robot-vision">https://sites.google.com/view/guillermogallego/teaching/event-based-robot-vision</a></li>
@@ -438,7 +461,7 @@ conda <span class="nb">install</span> <span class="nt">-c</span> conda-forge ope
 
     
     
-    Last updated: August 04, 2021.
+    Last updated: August 05, 2021.
     
   </div>
 </footer>
