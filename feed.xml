@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-08-09T19:10:28+08:00</updated><id>/feed.xml</id><title type="html">DVS-Group</title><subtitle>The main website of DVS-Group in Wuhan University by Prof. Lei Yu.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-08-09T19:57:56+08:00</updated><id>/feed.xml</id><title type="html">DVS-Group</title><subtitle>The main website of DVS-Group in Wuhan University by Prof. Lei Yu.
 </subtitle><entry xml:lang="zh"><title type="html">事件相机暑期课程</title><link href="/blog/2021/event_course/" rel="alternate" type="text/html" title="事件相机暑期课程" /><published>2021-08-03T18:09:00+08:00</published><updated>2021-08-03T18:09:00+08:00</updated><id>/blog/2021/event_course</id><content type="html" xml:base="/blog/2021/event_course/">&lt;p&gt;“动态视觉与感知”课题组（DVS-Group）将组织第一次事件相机暑期课程，内容包括事件相机原理、数据处理以及相关基础算法的介绍；同时，我们还将简单介绍脉冲神经网络的基础知识和简单应用。课程简单有趣，主要面向本校低年级本科生和组内刚入学0年级研究生，欢迎大家报名学习。&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;若希望加入课程学习，请加QQ群：925361524.&lt;/strong&gt;&lt;/p&gt;
@@ -225,7 +225,12 @@ conda config &lt;span class=&quot;nt&quot;&gt;--add&lt;/span&gt; channels https:
   &lt;li&gt;DVS-Group事件相机相关论文：&lt;a href=&quot;https://dvs-whu.cn/publications/&quot;&gt;https://dvs-whu.cn/publications/&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Github汇总：&lt;a href=&quot;https://github.com/uzh-rpg/event-based_vision_resources&quot;&gt;https://github.com/uzh-rpg/event-based_vision_resources&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;相关论文列表（按年份）：&lt;a href=&quot;https://docs.google.com/spreadsheets/d/1_OBbSz10CkxXNDHQd-Mn_ui3OmymMFvm-lW316uvxy8/edit#gid=0&quot;&gt;https://docs.google.com/spreadsheets/d/1_OBbSz10CkxXNDHQd-Mn_ui3OmymMFvm-lW316uvxy8/edit#gid=0&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;课程（Guillermo Gallego）：&lt;a href=&quot;https://sites.google.com/view/guillermogallego/teaching/event-based-robot-vision&quot;&gt;https://sites.google.com/view/guillermogallego/teaching/event-based-robot-vision&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;相关课程：
+    &lt;ul&gt;
+      &lt;li&gt;Event-based Robot Vision  (Spring 2020) by Guillermo Gallego：&lt;a href=&quot;https://sites.google.com/view/guillermogallego/teaching/event-based-robot-vision&quot;&gt;https://sites.google.com/view/guillermogallego/teaching/event-based-robot-vision&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;Bio-inspired Computer Vision  (Spring 2020) by Guillermo Gallego：&lt;a href=&quot;https://sites.google.com/view/guillermogallego/teaching/bio-inspired-computer-vision&quot;&gt;https://sites.google.com/view/guillermogallego/teaching/bio-inspired-computer-vision&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
   &lt;li&gt;相关研究团队：
     &lt;ul&gt;
       &lt;li&gt;瑞士INI-RPG团队：&lt;a href=&quot;http://rpg.ifi.uzh.ch/research_dvs.html&quot;&gt;http://rpg.ifi.uzh.ch/research_dvs.html&lt;/a&gt;&lt;/li&gt;
