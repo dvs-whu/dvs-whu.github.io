@@ -177,27 +177,64 @@ table th, d-article table td {
 
     <div class="container mt-5">
 
-        <div class="post">
+        <div class="projects">
             <header class="post-header">
-                <h1 class="post-title">E-SAI</h1>
-                <p class="post-description">Event-based Synthetic Aperture Imaging with a Hybrid Network</p>
+                <h1>Event-based Synthetic Aperture Imaging with a Hybrid Network </h1>
+                <div class="authors">
+                    
+                    
+                        
+                        <a href=/>Lei Yu</a><sup>1</sup>, 
+                        
+                    
+                        
+                        <a href=/members/zx/>Xiang Zhang</a><sup>1</sup>, 
+                        
+                    
+                        
+                        <a href=/members/lw/>Wei Liao</a><sup>1</sup>, 
+                        
+                    
+                        
+                        <a href=http://www.captain-whu.com/yangwen.html>Wen Yang</a><sup>1</sup>, 
+                        
+                    
+                        
+                        <a href=http://www.captain-whu.com/xia_En.html>Gui-song Xia</a><sup>2</sup>
+                        
+                    
+                    
+                </div>
+                <div class="affiliations">
+                    
+                        <sup>1</sup>School of Electronic Information, Wuhan University
+                    
+                        <sup>2</sup>School of Computer Science, Wuhan University
+                    
+                </div>
+                
+                
+                <!-- <p class="post-description">Event-based Synthetic Aperture Imaging with a Hybrid Network</p> -->
             </header><article>
-                <!-- <style>
+                <div class="projects">
+                    <!-- <style>
  align="left" border="0" width="300" style="padding-left: 50px;padding-right: 50px;"
 </style> -->
-<blockquote>
-This work has been published in CVPR2021 <a class="citation" href="#zhang2021">(Zhang et al., 2021)</a> and selected as the Best Paper Candidate.
-</blockquote>
 
 <h2 id="abstract">Abstract</h2>
 
-<p>Synthetic aperture imaging (SAI) is able to achieve the see through effect by blurring out the off-focus foreground occlusions and reconstructing the in-focus occluded targets from multi-view images. However, very dense occlusions and extreme lighting conditions may bring significant disturbances to the SAI based on conventional frame-based cameras, leading to performance degeneration. To address these problems, we propose a novel SAI system based on the event camera which can produce asynchronous events with extremely low latency and high dynamic range. Thus, it can eliminate the interference of dense occlusions by measuring with almost continuous views, and simultaneously tackle the over/under exposure problems. To reconstruct the occluded targets, we propose a hybrid encoder-decoder network composed of spiking neural networks (SNNs) and convolutional neural networks (CNNs). In the hybrid network, the spatio-temporal information of the collected events is first encoded by SNN layers, and then transformed to the visual image of the occluded targets by a style-transfer CNN decoder. Through experiments, the proposed method shows remarkable performance in dealing with very dense occlusions and extreme lighting conditions, and high quality visual images can be reconstructed using pure event data.</p>
+<p>Synthetic aperture imaging (SAI) can achieve the see-through effect by blurring out the off-focus foreground occlusions and reconstructing the in-focus occluded targets from multi-view images. However, very dense occlusions and extreme lighting conditions may bring significant disturbances to the SAI based on conventional frame-based cameras, leading to performance degeneration. To address these problems, we propose a novel SAI system based on the event camera which can produce asynchronous events with extremely low latency and high dynamic range. Thus, it can eliminate the interference of dense occlusions by measuring with almost continuous views, and simultaneously tackle the over/under exposure problems. To reconstruct the occluded targets, we propose a hybrid encoder-decoder network composed of spiking neural networks (SNNs) and convolutional neural networks (CNNs). In the hybrid network, the Spatio-temporal information of the collected events is first encoded by SNN layers and then transformed to the visual image of the occluded targets by a style-transfer CNN decoder. Through experiments, the proposed method shows remarkable performance in dealing with very dense occlusions and extreme lighting conditions, and high-quality visual images can be reconstructed using pure event data.</p>
 
-<div class="col-sm mt-3 mt-md-0">
-    <div class="fake-img l-body">
-        <img class="img-fluid rounded z-depth-0" src="/assets/img/esai_proj/pipeline.png" alt="" title="Pipeline of E-SAI" />
-    </div>
+<div class="invisible">
+<a class="citation" href="#zhang2021">(Zhang et al., 2021)</a> and (missing reference)
 </div>
+
+<!-- <div class="col-sm mt-3 mt-md-0">
+    <div class="fake-img l-body">
+        <img class="img-fluid rounded z-depth-0" src="/assets/img/esai_proj/pipeline.png" alt="" title="Pipeline of E-SAI"/>
+    </div>
+</div> -->
+<p><img src="/assets/img/esai_proj/pipeline.png" alt="" /></p>
 
 <h2 id="videos">Videos</h2>
 
@@ -206,7 +243,7 @@ This work has been published in CVPR2021 <a class="citation" href="#zhang2021">(
 </div>
 
 <h2 id="results">Results</h2>
-<p>Here are the results on our event-based SAI dataset including indoor scenes, outdoor scenes and extreme lighting scenes, and we show the reconstruction process as the number of input events increases. The dataset will be released soon.</p>
+<p>Here are the results on our event-based SAI dataset including indoor scenes, outdoor scenes, and extreme lighting scenes, and we show the reconstruction process as the number of input events increases. The dataset will be released soon.</p>
 
 <h3 id="indoor-scenes">Indoor Scenes</h3>
 <div class="row fake-img l-body text-center">
@@ -364,9 +401,11 @@ This work has been published in CVPR2021 <a class="citation" href="#zhang2021">(
 </div>
 </div>
 
-<h2 id="related-publications">Related Publications</h2>
-<div class="publications">
-      <ol class="bibliography"><li>
+
+                </div>
+                <h2>Related Publications</h2>
+                <div class="publications">
+                    <ol class="bibliography"><li>
   
 
 
@@ -374,7 +413,7 @@ This work has been published in CVPR2021 <a class="citation" href="#zhang2021">(
 
 <div class="row">
   <div class="col-sm-3">
-    <img class="img-fluid" src="/assets/img/esai_proj/esai_cvpr.jpg" />
+    <img class="img-fluid" src="/assets/img/esai_proj/esai_cvpr.jpg">
   
   </div>
 
@@ -495,9 +534,7 @@ This work has been published in CVPR2021 <a class="citation" href="#zhang2021">(
   </div>
 </div>
 </li></ol>
-</div>
-
-
+                </div>
             </article>
 
         </div>
@@ -514,7 +551,7 @@ This work has been published in CVPR2021 <a class="citation" href="#zhang2021">(
 
     
     
-    Last updated: August 09, 2021.
+    Last updated: August 11, 2021.
     
   </div>
 </footer>
