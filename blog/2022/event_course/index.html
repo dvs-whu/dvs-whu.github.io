@@ -7,7 +7,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 <title>
-     DVS-Group   | 事件相机暑期课程 
+     DVS-Group   | 不一样的世界：事件相机初探 
 </title>
 <meta name="description" content="The main website of DVS-Group in Wuhan University by Prof. Lei Yu.
 ">
@@ -18,8 +18,8 @@
 " />
 <meta property="og:type" content="object" />
 <meta property="og:title" content="" />
-<meta property="og:url" content="/blog/2021/event_course/" />
-<meta property="og:description" content="事件相机暑期课程" />
+<meta property="og:url" content="/blog/2022/event_course/" />
+<meta property="og:description" content="不一样的世界：事件相机初探" />
 <meta property="og:image" content="" /> 
 
 <!-- Bootstrap & MDB -->
@@ -40,7 +40,7 @@
 
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>"> 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/blog/2021/event_course/">
+<link rel="canonical" href="/blog/2022/event_course/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -136,25 +136,26 @@
 
 
   <header class="post-header">
-    <h1 class="post-title">事件相机暑期课程</h1>
-    <p class="post-meta">August 3, 2021 </p> 
+    <h1 class="post-title">不一样的世界：事件相机初探</h1>
+    <p class="post-meta">March 14, 2022 </p> 
   </header>
 
   <article class="post-content">
     <p>“动态视觉与感知”课题组（DVS-Group）将组织第一次事件相机暑期课程，内容包括事件相机原理、数据处理以及相关基础算法的介绍；同时，我们还将简单介绍脉冲神经网络的基础知识和简单应用。课程简单有趣，主要面向本校低年级本科生和组内刚入学0年级研究生，欢迎大家报名学习。</p>
 
-<p><strong>若希望加入课程学习，请加QQ群：925361524.</strong></p>
+<p><strong>若希望加入课程学习，请加QQ群：690959899.</strong></p>
 
-<p><strong>时间</strong>: 2021.08.15—2021.08.17<br />
-<strong>地点</strong>: 腾讯会议 <br />
+<p><strong>时间</strong>: 2022.03.19—2022.04.23<br />
+<strong>地点</strong>: （将在QQ群内实时公布）<br />
 <strong>要求</strong>: 每堂课开课前，请按照要求配置好自己的电脑环境，如果有什么问题，可以在QQ群联系对应的老师。<br />
 <strong>内容</strong>:</p>
 <ul>
   <li><a href="#初识事件相机基于事件的视觉感知和处理">初识事件相机——基于事件的视觉感知和处理</a></li>
   <li><a href="#怎么玩事件相机之数据采集处理和显示">怎么玩——事件相机之数据采集、处理和显示</a></li>
-  <li><a href="#怎么学面向事件相机的深度学习方法">怎么学——面向事件相机的深度学习方法</a></li>
-  <li><a href="#怎么识别基于事件的车牌识别">怎么识别——基于事件的车牌识别</a></li>
-  <li><a href="#下一代神经网络脉冲神经网络基础及应用">下一代神经网络——脉冲神经网络基础及应用</a></li>
+  <li><a href="#相机校正和位姿估计">相机校正和位姿估计</a></li>
+  <li><a href="#基于事件的图像去模糊">基于事件的图像去模糊</a></li>
+  <li><a href="#深度学习之对抗生成网络卡通动漫头像生成">深度学习之对抗生成网络（卡通动漫头像生成）</a></li>
+  <li><a href="#脉冲神经网络基础">脉冲神经网络基础</a></li>
   <li><a href="#相关资料">相关资料</a></li>
 </ul>
 
@@ -162,7 +163,7 @@
 
 <h2 id="初识事件相机基于事件的视觉感知和处理">初识事件相机——基于事件的视觉感知和处理</h2>
 <p><strong>主讲人：</strong><a href="/">余磊老师</a><br />
-<strong>时间：</strong>8月15日上午9：00-11：00</p>
+<strong>时间：</strong>3月19日下午14：30-15：30</p>
 
 <p>事件相机是一种新体制的成像传感器，与传统RGB图像不同，它仅感知场景的亮度变化。事件相机的输出带有时间、位置和极性的事件点集，通过事件点集动态感知场景变化，具有高速、高动态和低功耗的特性。因此，在一些高速、高动态场景中具有非常高的应用价值。</p>
 <div class="row">
@@ -186,7 +187,7 @@
 
 <h2 id="怎么玩事件相机之数据采集处理和显示">怎么玩——事件相机之数据采集、处理和显示</h2>
 <p><strong>主讲人：</strong><a href="/members/lw/">廖伟</a><br />
-<strong>时间：</strong>8月15日下午15：00-17：00<br />
+<strong>时间：</strong>3月19日下午15：30-18：00<br />
 <strong>准备工作：</strong>建议在<a href="https://blog.csdn.net/wzyaiwl/article/details/109558146">Windows</a>或<a href="https://blog.csdn.net/ITBigGod/article/details/85690257">Ubuntu</a>系统下，安装Anaconda3，并创建包含numpy、opencv、dv、matplotlib以及一些其他基础库的python环境, 以及安装dv软件。</p>
 <ul>
   <li>Python环境配置
@@ -221,19 +222,17 @@
   <li>DV软件安装
     <ul>
       <li>在Windows下，通过该<a href="http://release.inivation.com/gui/latest-win-stable">链接</a>下载最新版本的dv软件并安装</li>
-      <li>在Ubuntu16.04系统中，在终端中使用以下命令进行安装
-        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>add-apt-repository ppa:ubuntu-toolchain-r/test
-<span class="nb">sudo </span>add-apt-repository ppa:lkoppel/opencv
-<span class="nb">sudo </span>add-apt-repository ppa:janisozaur/cmake-update
-<span class="nb">sudo </span>add-apt-repository ppa:inivation-ppa/inivation-xenial
-<span class="nb">sudo </span>apt-get update
-<span class="nb">sudo </span>apt-get <span class="nb">install </span>dv-gui
+      <li>在Ubuntu 18.04系统中，在终端中使用以下命令进行安装
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+  sudo add-apt-repository ppa:inivation-ppa/inivation-bionic
+  sudo apt-get update
+  sudo apt-get install dv-gui
 </code></pre></div>        </div>
       </li>
-      <li>在Ubuntu18.04、20.04系统中，在终端中使用以下命令进行安装
-        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>add-apt-repository ppa:inivation-ppa/inivation
-<span class="nb">sudo </span>apt-get update
-<span class="nb">sudo </span>apt-get <span class="nb">install </span>dv-gui
+      <li>在Ubuntu 20.04系统中，在终端中使用以下命令进行安装
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  sudo add-apt-repository ppa:inivation-ppa/inivation
+  sudo apt-get update
+  sudo apt-get install dv-gui
 </code></pre></div>        </div>
       </li>
     </ul>
@@ -242,24 +241,73 @@
 
 <hr />
 
-<h2 id="怎么学面向事件相机的深度学习方法">怎么学——面向事件相机的深度学习方法</h2>
-<p><strong>主讲人：</strong><a href="/members/czy/">程章意</a><br />
-<strong>时间：</strong>8月16日上午9：00-11：00<br />
-<strong>准备工作：</strong></p>
+<h2 id="相机校正和位姿估计">相机校正和位姿估计</h2>
+<p><strong>主讲人：</strong><a href="/members/lj/">刘健</a><br />
+<strong>时间：</strong>3月26日下午15：00-17：30<br />
+<strong>准备工作：</strong>建议在<a href="https://blog.csdn.net/wzyaiwl/article/details/109558146">Windows</a>或<a href="https://blog.csdn.net/ITBigGod/article/details/85690257">Ubuntu</a> 系统下，安装Anaconda3，并创建包含numpy、opencv、matplotlib以及一些其他基础库的python环境。</p>
+
 <ul>
-  <li>环境配置
+  <li>Python环境配置
     <ol>
-      <li>建议在<a href="https://blog.csdn.net/wzyaiwl/article/details/109558146">Windows</a>或<a href="https://blog.csdn.net/ITBigGod/article/details/85690257">Ubuntu</a>系统下，安装Anaconda3，并创建名为py36的python环境。
-        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda create <span class="nt">-n</span> py36 <span class="nv">python</span><span class="o">=</span>3.6
-</code></pre></div>        </div>
-        <p>安装jupyter notebook用于编写和运行代码</p>
-        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda <span class="nb">install </span>jupyter notebook
+      <li>创建dv环境 <br />
+在Windows系统中，启动Anaconda Prompt终端，或在Ubuntu系统的终端中输入以下指令
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda create -n calibration python=3.8
 </code></pre></div>        </div>
       </li>
-      <li>配置python环境
-        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda <span class="nb">install </span>pytorch torchvision <span class="nv">cudatoolkit</span><span class="o">=</span>10.0 <span class="nt">-c</span> pytorch
-conda <span class="nb">install </span>pandas
-conda <span class="nb">install</span> <span class="nt">-c</span> conda-forge opencv
+      <li>激活环境
+        <ul>
+          <li>对于Windows系统，在Anaconda Prompt中输入
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda activate calibration
+</code></pre></div>            </div>
+          </li>
+        </ul>
+      </li>
+      <li>安装必要的依赖包<br />
+在激活环境后，使用pip指令安装一些依赖包
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install numpy opencv-python opencv-contrib-python matplotlib
+</code></pre></div>        </div>
+        <p>使用conda指令安装依赖包</p>
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda install yaml
+</code></pre></div>        </div>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <p>进入jupyter notebook</p>
+
+    <ul>
+      <li>在Windows或者在Ubuntu下，在终端中使用以下命令进入文件夹并启动jupyter notebook
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd training_courses
+jupyter notebook
+</code></pre></div>        </div>
+        <hr />
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="基于事件的图像去模糊">基于事件的图像去模糊</h2>
+<p><strong>主讲人：</strong><a href="/members/wbs/">王碧杉</a><br />
+<strong>时间：</strong>4月2日下午15：00-17：30<br />
+<strong>准备工作：</strong>在windows或ubuntu系统下，安装matlab和Anaconda3。\</p>
+
+<ul>
+  <li>Python环境配置
+    <ol>
+      <li>创建运行eSL-Net的环境，创建名为eslnet的虚拟环境
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda create -n eslnet python=3.6
+</code></pre></div>        </div>
+      </li>
+      <li>激活虚拟环境
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda activate eslnet
+</code></pre></div>        </div>
+      </li>
+      <li>安装pytorch
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install torch&gt;=1.0.0 torchvision
+</code></pre></div>        </div>
+      </li>
+      <li>安装依赖包
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install argparse numpy opencv-python scipy 
 </code></pre></div>        </div>
       </li>
     </ol>
@@ -268,99 +316,70 @@ conda <span class="nb">install</span> <span class="nt">-c</span> conda-forge ope
 
 <hr />
 
-<h2 id="怎么识别基于事件的车牌识别">怎么识别——基于事件的车牌识别</h2>
-<p><strong>主讲人：</strong><a href="/members/lx/">卢昕老师</a><br />
-<strong>时间：</strong>8月16日下午15：00-17：00
+<h2 id="深度学习之对抗生成网络卡通动漫头像生成">深度学习之对抗生成网络（卡通动漫头像生成）</h2>
+<p><strong>主讲人：</strong><a href="/members/zc/">张驰</a><br />
+<strong>时间：</strong>4月9日下午15：00-17：30<br />
 <strong>准备工作：</strong></p>
 
 <ul>
-  <li>新建虚拟环境，在虚拟环境下进行下述环境配置可以避免版本冲突，较为稳妥。</li>
-  <li>下载代码、CCPD数据和预训练模型fh02.pth：https://github.com/detectRecog/CCPD</li>
-  <li>安装 Cuda(release 9.1, V9.1.85）：如果CUDA的安装版本与之前安装的不同，请在网上找教程自学如何安装多CUDA版本</li>
-  <li>安装以下版本的深度学习框架和软件包
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pytorch 0.3.1
-numpy 1.14.3
-cv2 2.4.9.1
-</code></pre></div>    </div>
+  <li>Python环境配置
+    <ol>
+      <li>python3-3.7，不可超过 3.7 版本</li>
+      <li>tensorflow-cpu == 1.14.0</li>
+    </ol>
   </li>
-  <li>标注新图片车牌：
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python annotate.py <span class="nt">-i</span> <span class="o">[</span>需要检测的图片文件夹路径] <span class="nt">-m</span> <span class="o">[</span>模型路径<span class="k">***</span>/fh02.pth]
-</code></pre></div>    </div>
-  </li>
-  <li>测试模型：
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python rpnetEval.py <span class="nt">-i</span> <span class="o">[</span>需要检测的图片文件夹路径，请将图片标注转换为CCPD数据集标注格式] <span class="nt">-m</span> <span class="o">[</span>模型路径<span class="k">***</span>/fh02.pth]
-</code></pre></div>    </div>
-  </li>
-  <li>数据集下载：<a href="https://pan.baidu.com/s/182ACyAgcebQ2wgOHN6pjGg">百度网盘</a>，提取码：o963。</li>
-</ul>
-
-<hr />
-
-<h2 id="下一代神经网络脉冲神经网络基础及应用">下一代神经网络——脉冲神经网络基础及应用</h2>
-<p><strong>主讲人：</strong><a href="/members/zx/">张翔</a>、<a href="/members/zwy/">周维怡</a><br />
-<strong>时间：</strong>8月17日上午9：00-12：00<br />
-<strong>准备工作：</strong></p>
-<ul>
-  <li>系统安装：
-    <ul>
-      <li>Ubuntu16.04系统（可以在windows10下<a href="https://www.cnblogs.com/masbay/p/10745170.html">安装</a>ubuntu双系统（选择安装ubuntu16.04)）</li>
-      <li>在Ubuntu16.04下<a href="https://blog.csdn.net/He_9520/article/details/99714635">安装并配置</a>cuda10.1+cudnn。在Ubuntu系统下<a href="https://blog.csdn.net/ITBigGod/article/details/85690257">安装</a>Anaconda3，然后使用anaconda来<a href="https://zhuanlan.zhihu.com/p/92292882">创建</a>python独立的虚拟环境并安装Pytorch。
-        <ul>
-          <li>创建名为py36，python版本为3.6的虚拟环境
-            <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda create <span class="nt">-n</span> py36 <span class="nv">python</span><span class="o">=</span>3.6
-</code></pre></div>            </div>
-          </li>
-          <li>在虚拟环境py36下安装1.6.0版本的Pytorch
-            <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda <span class="nb">install </span><span class="nv">pytorch</span><span class="o">==</span>1.6.0 <span class="nv">torchvision</span><span class="o">==</span>0.7.0 <span class="nv">cudatoolkit</span><span class="o">=</span>10.1 <span class="nt">-c</span> pytorch
-</code></pre></div>            </div>
-          </li>
-          <li>在指定环境下安装jupyter notebook用于编写和运行代码
-            <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda <span class="nb">install </span>jupyter notebook
-</code></pre></div>            </div>
-          </li>
-        </ul>
-      </li>
-      <li>Windows系统：在Windows系统下<a href="https://blog.csdn.net/baidu_22225919/article/details/82957508">安装</a>Anaconda，然后使用anaconda来创建python独立的虚拟环境并安装Pytorch，操作与Linux系统下基本一致（Linux系统下使用terminal即可，Windows下使用附带的Anaconda Prompt）。</li>
-    </ul>
-  </li>
-  <li>库的安装：
-    <ul>
-      <li>当使用conda安装的时候，可能会遇到下载过慢的问题，下载的时候可能会遇到无尽的等待。这里推荐用清华源替代默认conda源的方法，可以解决下载过慢的问题。
-        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda config <span class="nt">--add</span> channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
-conda config <span class="nt">--add</span> channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
-conda config <span class="nt">--set</span> show_channel_urls <span class="nb">yes</span>
-</code></pre></div>        </div>
-      </li>
-      <li>添加第三方conda源：
-        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda config <span class="nt">--add</span> channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
-conda config <span class="nt">--add</span> channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/
-conda config <span class="nt">--add</span> channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/
-conda config <span class="nt">--add</span> channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/menpo/
-conda config <span class="nt">--add</span> channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
-</code></pre></div>        </div>
-      </li>
-      <li>以下库的安装均是在py36虚拟环境下，首先激活py36虚拟环境
-        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda activate py36
-</code></pre></div>        </div>
-      </li>
-      <li>安装notebook、ipywidgets、rise、torchvision、torchsummary、numpy
-        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>notebook ipywidgets rise torchvision torchsummary <span class="nv">numpy</span><span class="o">==</span>1.15.4
-</code></pre></div>        </div>
-      </li>
-      <li>以下三个软件包均是dynapcnn的配套软件，详细介绍见<a href="https://gitlab.com/synsense/chengdu-dynapcnn-2020">网址</a>：安装aermanager、samna、sinabs
-        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span><span class="nv">aermanager</span><span class="o">==</span>0.2.0 samna sinabs 
-</code></pre></div>        </div>
-      </li>
-      <li>以下三个软件包是Nengo的依赖包：安装nengo、nengo-gui和nengo-dl
-        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>nengo nengo-gui nengo-dl
-</code></pre></div>        </div>
-      </li>
-    </ul>
+  <li>安装依赖包
+    <ol>
+      <li>安装tensorflow 相关依赖包</li>
+      <li>安装SciPy 依赖包</li>
+      <li>安装pillow  依赖包
+均可安装好 python 后，终端使用“pip install 包名”进行安装。</li>
+    </ol>
   </li>
 </ul>
 
 <hr />
 
+<h2 id="脉冲神经网络基础">脉冲神经网络基础</h2>
+<p><strong>主讲人：</strong><a href="/members/zx/">张翔</a><br />
+<strong>时间：</strong>4月16日下午15：00-17：30<br />
+<strong>准备工作：</strong></p>
+
+<ul>
+  <li>
+    <p>环境配置<br />
+Linux系统：在windows10下<a href="https://www.cnblogs.com/masbay/p/10745170.html">安装</a>ubuntu双系统（选择安装ubuntu16.04)，在Ubuntu16.04下<a href="https://blog.csdn.net/He_9520/article/details/99714635">安装并配置</a>cuda10.1+cudnn。在Ubuntu系统下<a href="https://blog.csdn.net/ITBigGod/article/details/85690257">安装</a>Anaconda3，然后使用anaconda来<a href="https://zhuanlan.zhihu.com/p/92292882">创建</a>python独立的虚拟环境并安装Pytorch。</p>
+
+    <p>创建名为py36，python版本为3.6的虚拟环境</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda create -n py36 python=3.6
+</code></pre></div>    </div>
+
+    <p>可以在指定环境下安装jupyter notebook用于编写和运行代码</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda install jupyter notebook
+</code></pre></div>    </div>
+
+    <p>Windows系统：在Windows系统下<a href="https://blog.csdn.net/baidu_22225919/article/details/82957508">安装</a>Anaconda，然后使用anaconda来创建python独立的虚拟环境并安装Pytorch，操作与Linux系统下基本一致（Linux系统下使用terminal即可，Windows下使用附带的Anaconda Prompt）。</p>
+  </li>
+  <li>
+    <p>库的安装</p>
+
+    <p>以下库的安装均是在py36虚拟环境下，首先激活py36虚拟环境</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda activate py36
+</code></pre></div>    </div>
+
+    <p>以下三个软件包是Nengo的依赖包：</p>
+
+    <p>安装nengo、nengo-gui和nengo-dl</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install nengo nengo-gui nengo-dl
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<hr />
 <h2 id="相关资料">相关资料</h2>
 
 <ol>
@@ -379,6 +398,7 @@ conda config <span class="nt">--add</span> channels https://mirrors.tuna.tsinghu
       <li>北大黄老师团队：<a href="http://www.ai.pku.edu.cn/info/1139/1243.htm">http://www.ai.pku.edu.cn/info/1139/1243.htm</a></li>
       <li>北大CI组：<a href="http://ci.idm.pku.edu.cn/">http://ci.idm.pku.edu.cn/</a></li>
       <li>同济大学：<a href="https://ispc-group.github.io/">https://ispc-group.github.io/</a></li>
+      <li>上海科技大学：<a href="https://mpl.sist.shanghaitech.edu.cn/">https://mpl.sist.shanghaitech.edu.cn/</a></li>
     </ul>
   </li>
   <li>事件相机相关公司：
